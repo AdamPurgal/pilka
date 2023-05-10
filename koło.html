@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        #circle{
+            width:100px;
+            height:100px;
+            background-color: red;
+            border-radius: 50%;
+            position: absolute;
+            left: 400px;
+            animation: animacja 1s infinite alternate ease-in;
+        }
+        
+        @keyframes animacja {
+        from{top: 100px; height:100px; }
+        to{top:400px;height:100px; }            
+        }
+       
+        #ow{
+            top:500px;
+            width:100px;
+            height:15px;
+            border-radius: 50%;
+            position:absolute;
+            left:400px;
+            animation: cien 1s infinite alternate ease-in;
+        }
+        @keyframes cien {
+        from{background-color:white; filter:blur(15px); }
+        to{background-color:gray;filter:blur(10px); }            
+        }
+    </style>
+</head>
+<body>
+    <div id="circle"></div>
+    <div id="ow"></div>
+</body>
+</html>
